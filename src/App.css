@@ -1,19 +1,23 @@
 html * {
-  overflow: visible;
+  overflow: visible !important;
 
   font-family: "Oxygen", sans-serif;
 }
 /* hide scroll */
 /* chrome */
+-webkit-scrollbar {
+  width: 0 !important;
+  background: transparent !important;
+}
 .element::-webkit-scrollbar {
   width: 0 !important;
-  background: transparent;
+  background: transparent !important;
 }
 /* firefox */
 .element {
-  overflow: -moz-scrollbars-none;
+  overflow: -moz-scrollbars-none !important;
 
-  background: transparent;
+  background: transparent !important;
 }
 /* IE2 */
 .element {
