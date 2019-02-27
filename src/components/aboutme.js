@@ -76,6 +76,7 @@ class About extends Component {
               I am Ruby, a newly graduated computer scientist with a strong
               background in applied mathematics and statistics.
               <br />
+              <br />
               In 2013, I came to the University of Calgary with the intention of
               completing an Applied Mathematics degree. By chance, I found and
               fell in love with computer science in an introductory course in
@@ -83,11 +84,13 @@ class About extends Component {
               extending my period of study and completing a second major in
               computer science.
               <br />
+              <br />
               By December of 2018, I will have obtained my BSc. with a double
               major in Computer Science and Applied Mathematics with a
               concentration in scientific computation. my areas of interest in
               the field of computer science includes computer graphics,
               networks, and scientific computing. <br />
+              <br />
               my portfolio include a variety of projects that reflect my
               interests as well as my attempts at learning other various skills
               and topics in computer science and mathematics. This website will
