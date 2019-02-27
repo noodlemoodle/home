@@ -11,7 +11,7 @@ class Resume extends Component {
   render() {
     return (
       <div>
-        <Grid>
+        <Grid className="resume-grid">
           <Cell col={5}>
             <div style={{ textAligne: "center" }}>
               <img src={Avatar} alt="avatar" style={{ height: "200px" }} />
