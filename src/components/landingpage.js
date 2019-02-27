@@ -1,24 +1,36 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import Avatar from "../img/avatar.png";
-import swal from "sweetalert";
+import swal from "@sweetalert/with-react";
 
 class Landing extends Component {
   componentDidMount() {
     document.title = "rubyZhang::home";
   }
+
   render() {
     return (
-      // onLoad={alert("hi")}
       <div
-        onLoad={swal({
-          text:
-            "Ruby is currently struggling with compatibility issues with React and Github Pages. \nIn the mean time, pleeeease\n>>> DO NOT refresh the page\n>>> DO NOT use your browser navigation ",
-          button: {
-            text: "Got it!",
-            closeModal: true
-          }
-        })}
+        onLoad={swal(
+          <div
+            style={{
+              opacity: "50%",
+              textAlign: "left"
+            }}
+          >
+            <h5>Dear visitor,</h5>
+            <p>
+              Ruby is currently struggling with solving compatibility issues
+              with React and Github pages.
+              <br />
+              In the mean time, pleaaaase
+            </p>
+            <ol>
+              <li>DO NOT refresh the page</li>
+              <li>DO NOT use your browser navigation</li>
+            </ol>
+          </div>
+        )}
         style={{ width: "100%", margin: "auto", overflow: "visible" }}
       >
         <Grid className="landing-grid">
