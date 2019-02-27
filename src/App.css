@@ -3,6 +3,10 @@ html * {
 
   font-family: "Oxygen", sans-serif;
 }
+
+ul {
+  list-style: none;
+}
 /* hide scroll */
 /* chrome */
 -webkit-scrollbar {
