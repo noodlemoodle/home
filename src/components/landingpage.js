@@ -13,13 +13,13 @@ class Landing extends Component {
       <div
         onLoad={swal({
           text:
-            "Ruby is currently struggling with compatibility issues with React and Github Pages. \nPleeeease\n>>> DO NOT refresh the page\n>>> DO NOT use your browser navigation ",
+            "Ruby is currently struggling with compatibility issues with React and Github Pages. \nIn the mean time, pleeeease\n>>> DO NOT refresh the page\n>>> DO NOT use your browser navigation ",
           button: {
             text: "Got it!",
             closeModal: true
           }
         })}
-        style={{ width: "100%", margin: "auto" }}
+        style={{ width: "100%", margin: "auto", overflow: "visible" }}
       >
         <Grid className="landing-grid">
           <Cell col={12}>
