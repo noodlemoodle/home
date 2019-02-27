@@ -1,21 +1,24 @@
 html * {
-  overflow: scroll;
+  overflow: auto;
 
   font-family: "Oxygen", sans-serif;
 }
 /* hide scroll */
 /* chrome */
-.element::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0 !important;
+  background: transparent;
 }
 /* firefox */
-.element {
+/* .element {
   overflow: -moz-scrollbars-none;
-}
+
+  background:transparent;
+} */
 /* IE2 */
-.element {
+/* .element {
   -ms-overflow-style: none;
-}
+} */
 
 .header-color {
   background: #e8cbc0; /* fallback for old browsers */
