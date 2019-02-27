@@ -13,6 +13,7 @@ class ProjectCard extends Component {
       >
         <CardTitle
           style={{
+            marginLeft: "0",
             color: "white",
             // textShadow:
             //   "-1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray,1px 1px 0 gray",
