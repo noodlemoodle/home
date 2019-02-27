@@ -18,10 +18,9 @@ class Landing extends Component {
               textAlign: "left"
             }}
           >
-            <h5>Dear visitor,</h5>
             <p>
-              Ruby is currently struggling with solving compatibility issues
-              with React and Github pages.
+              Ruby is currently struggling with compatibility issues between
+              React and Github pages.
               <br />
               In the mean time, pleaaaase
             </p>
