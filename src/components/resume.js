@@ -3,6 +3,7 @@ import { Grid, Cell } from "react-mdl";
 import Avatar from "../img/avatar.png";
 import Education from "./education";
 import Skills from "./skills";
+import ResumePDF from "../img/resume.pdf";
 
 class Resume extends Component {
   componentDidMount() {
@@ -12,15 +13,33 @@ class Resume extends Component {
     return (
       <div>
         <Grid className="resume-grid">
-          <Cell col={5}>
-            <div style={{ textAligne: "center" }}>
+          <Cell
+            className="resume-contact-cell"
+            col={5}
+            style={{ textAlign: "center" }}
+          >
+            <div style={{ textAlign: "center" }}>
               <img src={Avatar} alt="avatar" style={{ height: "200px" }} />
             </div>
-            <h2 style={{ paddingTop: "0.8em", overflow: "visible" }}>
+            <h2
+              style={{
+                paddingTop: "0.5em",
+                overflow: "visible"
+              }}
+            >
               Ruby Zhang
             </h2>
-            <h4 style={{ color: "grey" }}>Programmer</h4>
-            <hr style={{ borderTop: "3px solid #636FA4", width: "50%" }} />
+            <h4 style={{ color: "#404d89" }}>
+              Bachelor of Science | Programmer
+            </h4>
+            <hr
+              style={{
+                borderTop: "3px solid #404D89",
+                width: "50%",
+                align: "center",
+                marginLeft: "25%"
+              }}
+            />
             <p>
               I am a newly graduated computer science student with double major
               in applied mathematics. I have a strong ability to learn new
@@ -29,7 +48,14 @@ class Resume extends Component {
               My current goal is to find an entry-level job to further develop
               my skills as a computer scientist
             </p>
-            <hr style={{ borderTop: "3px solid #636FA4", width: "50%" }} />
+            <hr
+              style={{
+                borderTop: "3px solid #404D89",
+                width: "50%",
+                align: "center",
+                marginLeft: "25%"
+              }}
+            />
             <h5>Location</h5>
             <p>Toronto, Ontario, CAN</p>
             <h5>Phone</h5>
@@ -38,7 +64,22 @@ class Resume extends Component {
             <p>qiyzhang@icloud.com</p>
             <h5>Web</h5>
             <p>https://noodlemoodle.github.io/home</p>
-            <hr style={{ borderTop: "3px solid #636FA4", width: "50%" }} />
+            <hr
+              style={{
+                borderTop: "3px solid #404D89",
+                width: "50%",
+                align: "center",
+                marginLeft: "25%"
+              }}
+            />
+            <a
+              href={ResumePDF}
+              rel="noopener noreferrer"
+              target="_blank"
+              style={{ color: "#404D89", textDecoration: "none" }}
+            >
+              ☺Download My Resume☺
+            </a>
           </Cell>
           <Cell className="resume-right-col" col={7}>
             <h2 style={{ padding: "0.1em", margin: "0px" }}>Education</h2>

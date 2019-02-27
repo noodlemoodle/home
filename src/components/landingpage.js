@@ -14,7 +14,7 @@ class Landing extends Component {
             <img src={Avatar} alt="avatar" className="avatar-img" />
             <div className="banner-text">
               <h1>Ruby Zhang</h1>
-              <h2>New Graduate Software Developer</h2>
+              <h4>Recent Graduate && Aspiring Developer </h4>
               <hr />
               <p>C++ | Java | C | Python | C# | Javascript | HTML/CSS | SQL</p>
 

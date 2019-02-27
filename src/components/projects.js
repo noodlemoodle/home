@@ -253,7 +253,7 @@ class Project extends Component {
           <Tab>Terminal</Tab>
           <Tab>Desktop</Tab>
         </Tabs>
-        <Grid>
+        <Grid className="project-display-grid">
           <Cell col={12}>
             <div className="content">{this.toggleCategories()}</div>
           </Cell>

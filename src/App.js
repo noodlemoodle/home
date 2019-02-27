@@ -14,6 +14,7 @@ class App extends Component {
             className="header-color"
             title={
               <Link
+                className="home-link"
                 style={{
                   textDecoration: "none",
                   color: "white",

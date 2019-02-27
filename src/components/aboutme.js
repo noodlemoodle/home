@@ -10,15 +10,15 @@ class About extends Component {
     return (
       <div className="contact-body">
         <Grid className="contact-grid">
-          <Cell col={6}>
+          <Cell className="contact-cell" col={6}>
             <h2>Ruby Zhang</h2>
             <img
               src={Avatar}
               alt="avatar"
-              style={{ height: "250px", paddingBottom: "2em" }}
+              style={{ height: "200px", paddingBottom: "0.5em" }}
             />
-            <hr />
-            <div class="contact-list">
+            {/* <hr /> */}
+            <div className="contact-list">
               <List>
                 <ListItem>
                   <ListItemContent
@@ -50,14 +50,14 @@ class About extends Component {
                   </ListItemContent>
                 </ListItem>
 
-                <ListItem>
+                {/* <ListItem>
                   <ListItemContent
                     style={{ fontSize: "20px", fontFamily: "Allan" }}
                   >
-                    <i class="fab fa-discord" aria-hidden="true" />
+                    <i className="fab fa-discord" aria-hidden="true" />
                     noodlemoodle
                   </ListItemContent>
-                </ListItem>
+                </ListItem> */}
               </List>
             </div>
           </Cell>
