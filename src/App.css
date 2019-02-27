@@ -1,33 +1,185 @@
-.App {
+html * {
+  overflow: scroll;
+
+  font-family: "Oxygen", sans-serif;
+}
+
+.header-color {
+  background: #e8cbc0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #636fa4,
+    #e8cbc0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #636fa4,
+    #e8cbc0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Landing page css */
+
+.landing-grid {
+  background: #e8cbc0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #636fa4,
+    #e8cbc0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #636fa4,
+    #e8cbc0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+  padding-bottom: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.banner-text {
+  background-color: black;
+  opacity: 0.7;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.banner-text h2 {
+  font-size: 32px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 10%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner-text p {
+  font-size: 20px;
+  color: white;
+  padding: 1em;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 8px;
+}
+
+/* projects page css */
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+Card {
+  margin: 10px;
+}
+.project-card {
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: scale(1.1);
+  z-index: 5;
+}
+
+CardTitle {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  fill: white;
+  stroke: black;
+  stroke-width: 0.75;
+}
+
+/* contact page css */
+
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 2em;
+}
+
+.contact-grid {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  /* height: 550px; */
+  height: 80%;
+  background: white;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact-grid h2 {
+  font-family: "Allan", cursive;
+}
+
+.contact-grid p {
+  font-family: "Oxygen", sans-serif;
+  /* font-weight: bold; */
+}
+
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+
+.contact-list {
+  justify-content: center;
+}
+
+.contact-list i {
+  font-size: 25px;
+  padding-right: 2rem;
+}
+
+/* Resume page css */
+
+.resume-right-col {
+  background: #27221f;
+  color: white;
+  padding: 2em;
+}
+
+progress[value]::-webkit-progress-bar {
+  /* background-color: rgb(232, 203, 192); */
+  background-color: rgb(241, 229, 224);
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: rgb(245, 193, 175);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
 }
