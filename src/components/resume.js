@@ -11,7 +11,7 @@ class Resume extends Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ height: "100%" }}>
         <Grid className="resume-grid">
           <Cell
             className="resume-contact-cell"
