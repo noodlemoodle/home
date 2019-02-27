@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell } from "react-mdl";
 import Avatar from "../img/avatar.png";
+import swal from "sweetalert";
 
 class Landing extends Component {
   componentDidMount() {
@@ -8,7 +9,18 @@ class Landing extends Component {
   }
   render() {
     return (
-      <div style={{ width: "100%", margin: "auto" }}>
+      // onLoad={alert("hi")}
+      <div
+        onLoad={swal({
+          text:
+            "Ruby is currently struggling with compatibility issues with React and Github Pages. \nPleeeease\n>>> DO NOT refresh the page\n>>> DO NOT use your browser navigation ",
+          button: {
+            text: "Got it!",
+            closeModal: true
+          }
+        })}
+        style={{ width: "100%", margin: "auto" }}
+      >
         <Grid className="landing-grid">
           <Cell col={12}>
             <img src={Avatar} alt="avatar" className="avatar-img" />
@@ -47,6 +59,7 @@ class Landing extends Component {
             </div>
           </Cell>
         </Grid>
+        {/* <script>$(document).ready(function(){alert("hey")})</script> */}
       </div>
     );
   }

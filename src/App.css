@@ -71,6 +71,7 @@ html * {
   width: 70%;
   margin: auto;
   border-radius: 10px;
+  margin-bottom: 3em;
 }
 
 .banner-text h1 {
