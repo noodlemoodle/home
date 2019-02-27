@@ -14,6 +14,7 @@ class ProjectCard extends Component {
         <CardTitle
           style={{
             marginLeft: "0",
+            paddingLeft: "0",
             color: "white",
             // textShadow:
             //   "-1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray,1px 1px 0 gray",
@@ -30,7 +31,7 @@ class ProjectCard extends Component {
               //   backgroundColor: "rgb(241, 229, 224, 0.5)"
             }}
           >
-            {this.props.cardTitle}
+            &nbsp;&nbsp;&nbsp;{this.props.cardTitle}
           </mark>
         </CardTitle>
         <CardText>
