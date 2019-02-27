@@ -9,7 +9,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5"
   },
-  "homepage": "https://noodlemoodle.github.io/home/public",
+  "homepage": "https://noodlemoodle.github.io/home/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
