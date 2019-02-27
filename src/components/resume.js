@@ -40,7 +40,7 @@ class Resume extends Component {
                 marginLeft: "25%"
               }}
             />
-            <p>
+            <p style={{ width: "70%", paddingLeft: "15%" }}>
               I am a newly graduated computer science student with double major
               in applied mathematics. I have a strong ability to learn new
               skills quickly and work well in a team setting.
